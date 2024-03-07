@@ -1,3 +1,7 @@
+const http = require("http");
+const url = require("url");
+const greet = require("./greet");
+
 const server = http.createServer((req, res) => {
 
     const { name } = url.parse(req.url, true).query;
